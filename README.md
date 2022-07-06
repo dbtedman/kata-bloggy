@@ -8,7 +8,7 @@
 ![language: php](https://img.shields.io/badge/language-php-blue.svg?style=for-the-badge)
 ![platform: wordpress](https://img.shields.io/badge/platform-wordpress-blue.svg?style=for-the-badge)
 
-Placeholder
+Demonstration codebase for hosting a WordPress site.
 
 -   [Getting Started](#getting-started)
 -   [Verification](#verification)
