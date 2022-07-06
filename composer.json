@@ -1,0 +1,65 @@
+{
+    "name": "dbtedman/kata-wp",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daniel Tedman",
+            "email": "dbtedman@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Bloggy\\Plugin\\": "package/plugin/src/php"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Bloggy\\Plugin\\": "package/plugin/test/php"
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://wpackagist.org",
+            "only": [
+                "wpackagist-plugin/*",
+                "wpackagist-theme/*"
+            ]
+        }
+    ],
+    "require": {
+        "php": "7.4.*",
+        "wp-cli/wp-cli-bundle": "2.6.0",
+        "wpackagist-plugin/all-in-one-wp-security-and-firewall": "4.4.12",
+        "wpackagist-plugin/wordfence": "7.5.11",
+        "wpackagist-theme/twentytwentytwo": "1.2"
+    },
+    "require-dev": {
+        "mockery/mockery": "1.5.0",
+        "phpunit/phpunit": "9.5.20",
+        "roave/security-advisories": "dev-latest",
+        "squizlabs/php_codesniffer": "3.7.0"
+    },
+    "extra": {
+        "installer-paths": {
+            "external/wpackagist-plugin/{$name}/": [
+                "type:wordpress-plugin"
+            ],
+            "external/wpackagist-theme/{$name}/": [
+                "type:wordpress-theme"
+            ]
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true
+        },
+        "sort-packages": true
+    },
+    "scripts": {
+        "format": "phpcbf",
+        "lint": "phpcs -p",
+        "test": "phpunit"
+    }
+}

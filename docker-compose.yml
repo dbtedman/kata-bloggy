@@ -1,0 +1,29 @@
+---
+services:
+    web:
+        build:
+            context: "."
+        container_name: "bloggy_web"
+        restart: "always"
+        depends_on:
+            - "db"
+        ports:
+            - "8080:80"
+        environment:
+            WORDPRESS_DB_HOST: "db"
+            WORDPRESS_DB_USER: "bloggy"
+            WORDPRESS_DB_PASSWORD: "bloggy"
+            WORDPRESS_DB_NAME: "bloggy"
+        volumes:
+            - "./package/plugin:/var/www/html/wp-content/plugins/bloggy/"
+            - "./package/theme:/var/www/html/wp-content/themes/bloggy/"
+    db:
+        image: "mysql:5.7"
+        container_name: "bloggy_db"
+        restart: "always"
+        platform: "linux/x86_64"
+        environment:
+            MYSQL_DATABASE: "bloggy"
+            MYSQL_USER: "bloggy"
+            MYSQL_PASSWORD: "bloggy"
+            MYSQL_RANDOM_ROOT_PASSWORD: "1"

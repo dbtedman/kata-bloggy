@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "format": "sort-package-json && prettier . --write",
+    "lint": "sort-package-json --check && prettier . --check"
+  },
+  "devDependencies": {
+    "prettier": "2.6.2",
+    "sort-package-json": "1.57.0"
+  }
+}

@@ -1,0 +1,12 @@
+# Don't include IDE configuraiton
+/.idea/
+
+# Don't include external dependencies
+/node_modules/
+/vendor/
+/wordpress/
+/external/wpackagist-plugin/
+/external/wpackagist-theme/
+
+# Don't include temp files
+/.phpunit.result.cache

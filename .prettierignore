@@ -1,0 +1,9 @@
+# Don't touch library code
+/node_modules/
+/vendor/
+/external/
+/pnpm-lock.yaml
+/composer.lock
+
+# Don't touch IDE configuraiton
+/.idea/
