@@ -15,9 +15,11 @@
 
 declare(strict_types=1);
 
+use Bloggy\Plugin\Plugin;
+
 // Load external PHP modules from composer, this includes the source code for
 // this plugin and 3rd party libraries.
 include_once('/app/vendor/autoload.php');
 
-$plugin = new \Bloggy\Plugin\Plugin();
+$plugin = new Plugin();
 $plugin->bind();
