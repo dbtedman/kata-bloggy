@@ -7,6 +7,7 @@
 [![sast workflow status](https://img.shields.io/github/workflow/status/dbtedman/kata-bloggy/sast?style=for-the-badge&logo=github&label=sast)](https://github.com/dbtedman/kata-bloggy/actions/workflows/sast.yml)
 ![language: php](https://img.shields.io/badge/language-php-blue.svg?style=for-the-badge)
 ![platform: wordpress](https://img.shields.io/badge/platform-wordpress-blue.svg?style=for-the-badge)
+[![MIT License](https://img.shields.io/github/license/dbtedman/kata-bloggy?color=orange&style=for-the-badge)](https://github.com/dbtedman/kata-bloggy/blob/main/LICENSE.md)
 
 Demonstration codebase for hosting a WordPress site.
 
