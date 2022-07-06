@@ -80,7 +80,7 @@ installed [http://localhost:8080](http://localhost:8080).
 
 #### [A01:2021-Broken Access Control](https://owasp.org/Top10/A01_2021-Broken_Access_Control/)
 
-_Placeholder_
+[Github Security](https://github.com/features/security) detects secrets incorrectly committed into the repository.
 
 #### [A02:2021-Cryptographic Failures](https://owasp.org/Top10/A02_2021-Cryptographic_Failures/)
 
@@ -100,7 +100,7 @@ _Placeholder_
 
 #### [A06:2021-Vulnerable and Outdated Components](https://owasp.org/Top10/A06_2021-Vulnerable_and_Outdated_Components/)
 
-[Snyk](https://snyk.io) scans Gradle and NPM dependencies for know vulnerabilities and creates pull requests to resolve
+[Snyk](https://snyk.io) scans Composer and NPM dependencies for know vulnerabilities and creates pull requests to resolve
 the vulnerabilities when available.
 
 #### [A07:2021-Identification and Authentication Failures](https://owasp.org/Top10/A07_2021-Identification_and_Authentication_Failures/)

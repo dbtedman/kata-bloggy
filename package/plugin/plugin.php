@@ -4,10 +4,11 @@
  *
  * Author URI:      https://danieltedman.com
  * Author:          Daniel Tedman
- * Description:     Placeholder
+ * Description:     Demonstration codebase for hosting a WordPress site.
  * Plugin Name:     Bloggy
  * Plugin URI:      https://github.com/dbtedman/kata-bloggy
  * Text Domain:     bloggy
+ * License:         MIT
  * Version:         0.0.0
  *
  *----------------------------------------------------------------------------*/
