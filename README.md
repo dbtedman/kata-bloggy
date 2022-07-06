@@ -74,6 +74,17 @@ installed [http://localhost:8080](http://localhost:8080).
 
 -   [PSR-12: Extended Coding Style](https://www.php-fig.org/psr/psr-12/)
 
+### WP-CLI Automation
+
+WordPress usually requires significant manual interaction after initial install. WP-CLI is used to automate this process
+in a repeatable manner.
+
+### WordPress Plugins and Themes as Composer Dependencies
+
+By leveraging the [WordPress Packagist](https://wpackagist.org) system, any WordPress Plugins or Themes are installed as
+composer dependencies that allows for them to be updated easily alongside any other php dependencies use by this website
+itself.
+
 ### Security Mitigations
 
 > Initially based on the [OWASP Top 10 - 2021](https://owasp.org/www-project-top-ten/).
@@ -100,7 +111,8 @@ _Placeholder_
 
 #### [A06:2021-Vulnerable and Outdated Components](https://owasp.org/Top10/A06_2021-Vulnerable_and_Outdated_Components/)
 
-[Snyk](https://snyk.io) scans Composer and NPM dependencies for know vulnerabilities and creates pull requests to resolve
+[Snyk](https://snyk.io) scans Composer and NPM dependencies for know vulnerabilities and creates pull requests to
+resolve
 the vulnerabilities when available.
 
 #### [A07:2021-Identification and Authentication Failures](https://owasp.org/Top10/A07_2021-Identification_and_Authentication_Failures/)
