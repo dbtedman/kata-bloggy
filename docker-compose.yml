@@ -18,12 +18,11 @@ services:
             - "./package/plugin:/var/www/html/wp-content/plugins/bloggy/"
             - "./package/theme:/var/www/html/wp-content/themes/bloggy/"
     db:
-        image: "mysql:5.7"
+        image: "mariadb:10.8.3"
         container_name: "bloggy_db"
         restart: "always"
-        platform: "linux/x86_64"
         environment:
-            MYSQL_DATABASE: "bloggy"
-            MYSQL_USER: "bloggy"
-            MYSQL_PASSWORD: "bloggy"
-            MYSQL_RANDOM_ROOT_PASSWORD: "1"
+            MARIADB_DATABASE: "bloggy"
+            MARIADB_USER: "bloggy"
+            MARIADB_PASSWORD: "bloggy"
+            MARIADB_RANDOM_ROOT_PASSWORD: "1"
