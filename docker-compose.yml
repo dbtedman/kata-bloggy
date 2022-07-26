@@ -1,4 +1,6 @@
 ---
+# TODO: Redis Cache (configured for php cache)
+# TODO: Development SMTP Email
 services:
     web:
         build:
